@@ -6,7 +6,15 @@
   HINT: string and array methods that could be helpful (indexOf, filter)
 */
 
-function getLanes() {}
+// explicit return
+// function getLanes(arr) {
+//   const filtered = arr.filter((x) => x.includes("Lane"));
+//   console.log(filtered);
+//   return filtered;
+// }
+
+//arrow function
+const getLanes = (arr) => arr.filter((x) => x.includes("Lane"));
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
