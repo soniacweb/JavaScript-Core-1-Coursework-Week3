@@ -13,8 +13,13 @@
 let story =
   "I like dogs. One day I went to the park and I saw 10 dogs. It was a great day.";
 
-let result = story.replace("", "");
+let re = /dogs/gi;
+let newstr = story.replace(re, "cats");
+let newstr2 = newstr.replace("10", "100000");
+let newstr3 = newstr2.replace("day", "night");
+let result = newstr3.replace("great day", "brilliant night");
 
+// console.log("console: ", result);
 /* EXPECTED OUTPUT */
 
 const util = require("util");

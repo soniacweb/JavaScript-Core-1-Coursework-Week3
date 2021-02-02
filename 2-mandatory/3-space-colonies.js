@@ -15,8 +15,12 @@
   
 */
 
-function colonisers() {}
+const colonisers = (family) =>
+  family.filter(
+    (x) => x.charAt(0).toLowerCase() === "a" && x.includes("family")
+  );
 
+console.log(colonisers);
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 const voyagers = [

@@ -8,7 +8,18 @@
 
 var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, "whoops"];
 
-var pairsByIndex; // Complete this statement
+function isPair(score) {
+  if (
+    score !== null &&
+    score !== Boolean &&
+    typeof score !== "string" &&
+    score.length === 2
+  )
+    return score;
+  else return;
+}
+
+var pairsByIndex = pairsByIndexRaw.filter(isPair); // Complete this statement
 
 var students = ["Islam", "Lesley", "Harun", "Rukmini"];
 var mentors = ["Daniel", "Irina", "Mozafar", "Luke"];

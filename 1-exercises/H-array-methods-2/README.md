@@ -18,7 +18,7 @@ undefined
 
 ### `.includes()`
 
-_Returns true if a value is in the array._
+_Returns a boolean: true if a value is in the array._
 
 ```js
 var mentors = ["Daniel", "Irini", "Ashleigh", "Rob", "Etzali"];

@@ -11,7 +11,17 @@
     Some string methods that might help you here are .replace() and .substring(). 
 */
 
-function safeLevels() {}
+function safeLevels(arr) {
+  const numbers = arr.map((x) => parseFloat(x.replace("%", "")));
+  const planets = numbers.map((planet) => {
+    if (planet > 19.5 && planet < 23.5) {
+      return planet + "%";
+    } else return;
+  });
+  console.log(planets);
+  // const firstplanet = planets.substring(4);
+  // console.log(firstplanet);
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
