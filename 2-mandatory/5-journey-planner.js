@@ -18,10 +18,10 @@
 */
 
 function checkCodeIsThere(stringText) {
-  let magicWord = "code";
+  const magicWord = "code";
   //edit code below
-  if (stringText) {
-    return stringText;
+  if (stringText.includes("code")) {
+    return stringText.indexOf(magicWord);
   } else {
     return "Not found";
   }
